@@ -18,3 +18,6 @@ remote_file '/etc/profile.d/bash.conf.sh' do
   owner 'root'
   group 'root'
 end
+
+### Git ###
+package 'git'
