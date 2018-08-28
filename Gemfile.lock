@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    annotate_gem (0.0.13)
+      bundler (~> 1.1)
     ansi (1.5.0)
     diff-lcs (1.3)
     hashie (3.6.0)
@@ -50,6 +52,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate_gem (~> 0.0.13)
   itamae (~> 1.9)
   rake (~> 12.3)
   serverspec (~> 2.41)
