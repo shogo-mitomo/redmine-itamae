@@ -6,6 +6,7 @@ COOKBOOKS = %w[
   nginx
   nodejs
   ruby
+  redmine
 ].freeze
 
 COOKBOOKS.each do |cookbook|

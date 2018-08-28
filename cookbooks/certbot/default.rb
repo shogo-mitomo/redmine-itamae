@@ -23,7 +23,12 @@ execute "#{COMMAND} --standalone" do
 end
 
 ### Update ###
-ROOT_DIR = '/var/www/application/public'
+APP_ROOT = '/var/www/application'
+ROOT_DIR = "#{APP_ROOT}/public"
+
+git APP_ROOT do
+  repository 'https://github.com/shogo-mitomo/redmine.git'
+end
 
 directory ROOT_DIR do
   owner 'ec2-user'

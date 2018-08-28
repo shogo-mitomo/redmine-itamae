@@ -1,0 +1,1 @@
+@reboot ec2-user source /home/ec2-user/.bash_profile && cd /var/www/application && rm -f /var/www/application/tmp/pids/server.pid && bundle exec pumactl start
