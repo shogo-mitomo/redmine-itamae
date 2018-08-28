@@ -28,3 +28,10 @@ remote_file '/etc/profile.d/less.conf.sh' do
   owner 'root'
   group 'root'
 end
+
+### NSS Softoken ###
+remote_file '/etc/profile.d/nss-softokn.conf.sh' do
+  mode '0644'
+  owner 'root'
+  group 'root'
+end
