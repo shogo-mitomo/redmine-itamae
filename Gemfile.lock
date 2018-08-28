@@ -69,11 +69,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate_gem (~> 0.0.13)
-  itamae (~> 1.9)
-  rake (~> 12.3)
-  rubocop (~> 0.58.2)
-  serverspec (~> 2.41)
+  annotate_gem
+  itamae
+  rake
+  rubocop
+  serverspec
 
 BUNDLED WITH
    1.16.3

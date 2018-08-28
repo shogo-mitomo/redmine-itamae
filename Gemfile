@@ -2,12 +2,12 @@
 
 source 'https://rubygems.org'
 
-gem 'itamae', '~> 1.9'
+gem 'itamae'
 
-gem 'rake', '~> 12.3'
+gem 'rake'
 
-gem 'serverspec', '~> 2.41', group: [:test]
+gem 'serverspec', group: [:test]
 
-gem 'annotate_gem', '~> 0.0.13', group: [:development]
+gem 'annotate_gem', group: [:development]
 
-gem 'rubocop', '~> 0.58.2', group: [:development]
+gem 'rubocop', group: [:development]
