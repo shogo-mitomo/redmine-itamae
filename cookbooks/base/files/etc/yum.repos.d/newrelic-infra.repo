@@ -1,0 +1,8 @@
+[newrelic-infra]
+name=New Relic Infrastructure
+baseurl=http://download.newrelic.com/infrastructure_agent/linux/yum/el/6/$basearch
+gpgkey=http://download.newrelic.com/infrastructure_agent/gpg/newrelic-infra.gpg
+gpgcheck=1
+repo_gpgcheck=1
+enabled=1
+priority=1

@@ -48,3 +48,18 @@ package 'chrony'
 service 'chronyd' do
   action %i[enable start]
 end
+
+### newrelic-infra ###
+remote_file '/etc/newrelic-infra.yml' do
+  mode '0644'
+  owner 'root'
+  group 'root'
+end
+
+remote_file '/etc/yum.repos.d/newrelic-infra.repo' do
+  mode '0644'
+  owner 'root'
+  group 'root'
+end
+
+package 'newrelic-infra'
