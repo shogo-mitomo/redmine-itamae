@@ -21,3 +21,10 @@ end
 
 ### Git ###
 package 'git'
+
+### Less ###
+remote_file '/etc/profile.d/less.conf.sh' do
+  mode '0644'
+  owner 'root'
+  group 'root'
+end
