@@ -11,3 +11,10 @@ remote_file '/etc/profile.d/aws-cli.conf.sh' do
   owner 'root'
   group 'root'
 end
+
+### Bash ###
+remote_file '/etc/profile.d/bash.conf.sh' do
+  mode '0644'
+  owner 'root'
+  group 'root'
+end
