@@ -35,3 +35,16 @@ remote_file '/etc/profile.d/nss-softokn.conf.sh' do
   owner 'root'
   group 'root'
 end
+
+### chrony ###
+%w[ntp ntpdate].each do |package|
+  package package do
+    action :remove
+  end
+end
+
+package 'chrony'
+
+service 'chronyd' do
+  action %i[enable start]
+end
