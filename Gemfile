@@ -3,11 +3,13 @@
 source 'https://rubygems.org'
 
 gem 'itamae'
-
 gem 'rake'
 
-gem 'serverspec', group: [:test]
+group :test do
+  gem 'serverspec'
+end
 
-gem 'annotate_gem', group: [:development]
-
-gem 'rubocop', group: [:development]
+group :development do
+  gem 'annotate_gem'
+  gem 'rubocop'
+end
